@@ -16,9 +16,10 @@ const newArray2 = shuffleArray(array2);
 const newArray3 = shuffleArray(array3);
 
 console.log(newArray1);
-console.log(newArray1);
-console.log(newArray1);
+console.log(newArray2);
+console.log(newArray3);
 
 array1[1] = 1;
 // Console.log(newArray2);
 // console.log(newArray3);
+
