@@ -9,7 +9,7 @@
     "prepare": "husky"
   },
   "keywords": [],
-  "author": "",
+  "author": "Kevin Gonzales",
   "license": "ISC",
   "type": "module",
   "prettier": {
