@@ -95,7 +95,12 @@ export function newStep(array) {
   }
 
   array = JSON.parse(JSON.stringify(fakeArray));
-
+  /* For (let i = 0; i < 10; i++) {
+    for (let j = 0; j < 10; j++) {
+      fakeArray[j];
+    }
+  }
+*/
   return array;
 }
 
