@@ -1,57 +1,34 @@
-const n = 5;
+import { newArrayRamdons } from './paso1.js';
+// PASO 2
 
-// Crear un array con valores inicializados a 0
-const array1 = new Array(n).fill(0);
-const array2 = new Array(n).fill(0);
-const array3 = new Array(n).fill(0);
+export function newOrigin() {
+  const n = 5;
 
-// Asignar aleatoriamente 0 o 1 a cada elemento del array
-for (let i = 0; i < array1.length; i++) {
-  array1[i] = Math.round(Math.random());
+  const array1 = new Array(n).fill(0);
+  const array2 = new Array(n).fill(0);
+  const array3 = new Array(n).fill(0);
+
+  const search = [];
+
+  for (let i1 = 0; i1 < array1.length; i1++) {
+    if (array1[i1] === 1) {
+      search.push([['array1'], [i1]]);
+    }
+  }
+
+  for (let i2 = 0; i2 < array2.length; i2++) {
+    if (array2[i2] === 1) {
+      search.push([['array2'], [i2]]);
+    }
+  }
+
+  for (let i3 = 0; i3 < array3.length; i3++) {
+    if (array3[i3] === 1) {
+      search.push([['array3'], [i3]]);
+    }
+  }
+
+  console.log(search);
 }
 
-for (let i = 0; i < array2.length; i++) {
-  array2[i] = Math.round(Math.random());
-}
-
-for (let i = 0; i < array3.length; i++) {
-  array3[i] = Math.round(Math.random());
-}
-
-/* Paso 1
-
-console.log(array1);
-console.log(array2);
-console.log(array3);
-*/
-
-array1[0] = 1;
-array1[1] = 1;
-array1[2] = 1;
-array2[0] = 1;
-/* Paso 2
-console.log(array1);
-console.log(array2);
-console.log(array3);
-*/
-array1[0] = 1;
-array1[1] = 1;
-array2[0] = 1;
-array3[3] = 1;
-
-/* Paso 3
-console.log(array1);
-console.log(array2);
-console.log(array3);
-
-*/
-array1[0] = 1;
-array1[1] = 1;
-array1[2] = 1;
-array1[3] = 1;
-array2[3] = 1;
-array3[3] = 1;
-
-console.log(array1);
-console.log(array2);
-console.log(array3);
+newOrigin();

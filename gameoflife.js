@@ -1,24 +1,38 @@
-const array1 = [0, 0, 0, 1, 1];
-const array2 = [0, 0, 0, 1, 1];
-const array3 = [0, 0, 0, 1, 1];
+import { newArrayRamdons } from "./paso1";
 
-function shuffleArray(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
+const n = 5;
 
-  return array;
+// Crear un array con n valores 0
+const array1 = new Array(n).fill(0);
+const array2 = new Array(n).fill(0);
+const array3 = new Array(n).fill(0);
+
+// Asignar aleatoriamente 0 o 1 
+for (let i = 0; i < array1.length; i++) {
+  array1[i] = Math.round(Math.random());
 }
 
-const newArray1 = shuffleArray(array1);
-const newArray2 = shuffleArray(array2);
-const newArray3 = shuffleArray(array3);
+for (let i = 0; i < array2.length; i++) {
+  array2[i] = Math.round(Math.random());
+}
 
-console.log(newArray1);
-console.log(newArray1);
-console.log(newArray1);
+for (let i = 0; i < array3.length; i++) {
+  array3[i] = Math.round(Math.random());
+}
 
-array1[1] = 1;
-// Console.log(newArray2);
-// console.log(newArray3);
+// Paso1
+/*
+console.log(array1);
+console.log(array2);
+console.log(array3);
+*/
+// Paso2
+array1[2] = 1;
+array1[3] = 1;
+array2[2] = 1;
+array2[3] = 1;
+array3[0] = 1;
+array3[1] = 1;
+
+newArrayRamdons()
+/*
